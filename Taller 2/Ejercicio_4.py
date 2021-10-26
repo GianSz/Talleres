@@ -1,9 +1,15 @@
 def shellSort(arr):
     gap = int(len(arr)/2)
 
+    i = 0
+
     while gap > 0:
-        i = 0
+
+        j = 0
+
         for posicion in range (gap, len(arr)):
+
+            
             valorActual = arr[posicion]
             indice = posicion
 
@@ -12,8 +18,11 @@ def shellSort(arr):
                 indice -= gap
         
             arr[indice] = valorActual
-            i += 1
-            print("Pasada #", i, "->", arr)
+            j+=1
+            print("Intercambio #",j, "->", arr)
+            
+        i += 1  
+        print("Pasada #", i, "->", arr)     
         
         gap = int(gap/2)
 
