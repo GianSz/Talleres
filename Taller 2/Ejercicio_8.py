@@ -1,4 +1,8 @@
+
 def mergeSort(arr):
+
+    print("Pasada ->", arr)
+
     if len(arr) == 1:
         return arr
     
@@ -34,8 +38,6 @@ def mergeSort(arr):
             arr[posArr] = arrDerecha[posDer]
             posDer += 1
             posArr += 1
-
-        print("Pasada ->", arr)
 
 array = [21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 40] 
 mergeSort(array)
